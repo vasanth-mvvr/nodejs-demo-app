@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:20-alpine
 EXPOSE 3000
 RUN addgroup -S expense && adduser -S expense -G expense \
     && mkdir /opt/server \ 
